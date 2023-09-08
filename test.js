@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
   res.setHeader('Content-Type', 'text/plain');
   res.end('Hello World');
 });
- 
+
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
@@ -18,6 +18,7 @@ server.listen(port, hostname, () => {
 const express = require('express')
 const app = express()
 import bodyParser from 'body-parser';
+const mongoose = require('mongoose')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -34,15 +35,19 @@ app.get('/hello/:id', (req, res) => {
 });
 
 app.get('/hello', (req, res) => { 
- res.send("hello")
+  res.send("hello")
 })
 
 app.post('/bye', (req, res) => {
   res.send("bye")
- })
+})
 app.get('/hi', (req,res) => {
   res.render('sample.ejs')
 })
 app.listen(port, () => {
  console.log(`Example app listening on port ${port}`)
 })
+
+mongoose.connect('mongodb://127.0.0.1', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connect to database')) 
+  .catch(error => console.error('Connection error:', error));
