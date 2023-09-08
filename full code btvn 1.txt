@@ -1,0 +1,30 @@
+{_id: 1, name:"cleaning", unit: 1, price: 100000, created_at: Timestamp(0, 0), updated_at: Timestamp(0,0)}
+
+db.Services.insertMany([
+  {_id: 1, name: "Wifi", unit: "1", price: 500000, created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id: 2, name: "AC", unit: "1", price: 200000, created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id: 3, name: "TV", unit: "1", price: 100000, created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id: 4, name: "Massage", unit: "1", price: 50000, created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id: 5, name: "Hot Water Bathing", unit: "1", price: 100000, created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+])
+
+db.Motel.insertMany([
+  {_id:101 ,name:"room_1", group:"1", type:"normal", price:2000000, deposit:500000, debt:0, renter:0, day_of_hire: new Date(), expiration_date: new Date(), status: "full", services: []},
+  {_id:101 ,name:"room_1", group:"1", type:"normal", price:2000000, deposit:500000, debt:0, renter:0, day_of_hire: new Date(), expiration_date: new Date(), status: "full", services: []},
+{_id:101 ,name:"room_1", group:"1", type:"normal", price:2000000, deposit:500000, debt:0, renter:0, day_of_hire: new Date(), expiration_date: new Date(), status: "full", services: []},
+{_id:101 ,name:"room_1", group:"1", type:"normal", price:2000000, deposit:500000, debt:0, renter:0, day_of_hire: new Date(), expiration_date: new Date(), status: "full", services: []},
+{_id:101 ,name:"room_1", group:"1", type:"normal", price:2000000, deposit:500000, debt:0, renter:0, day_of_hire: new Date(), expiration_date: new Date(), status: "full", services: []},
+])
+
+db.renter.insertMany([
+  {_id:1, name:"Dang", phone:"0123", identification_card: "0792", birthday: new Date(), sex: true, province: "", district: "", commune: "", address: "", room:"", main_contact: true, status:"", created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id:2, name:"Dung", phone:"1245", identification_card: "0793", birthday: new Date(), sex: true, province: "", district: "", commune: "", address: "", room:"", main_contact: true, status:"", created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id:3, name:"Lam", phone:"3333", identification_card: "0794", birthday: new Date(), sex: true, province: "", district: "", commune: "", address: "", room:"", main_contact: true, status:"", created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id:4, name:"Nghi", phone:"1565", identification_card: "0795", birthday: new Date(), sex: true, province: "", district: "", commune: "", address: "", room:"", main_contact: true, status:"", created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id:5, name:"Triet", phone:"8989", identification_card: "0796", birthday: new Date(), sex: true, province: "", district: "", commune: "", address: "", room:"", main_contact: true, status:"", created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id:6, name:"Banh", phone:"9802", identification_card: "0797", birthday: new Date(), sex: true, province: "", district: "", commune: "", address: "", room:"", main_contact: true, status:"", created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id:7, name:"Nam", phone:"5124", identification_card: "0798", birthday: new Date(), sex: true, province: "", district: "", commune: "", address: "", room:"", main_contact: true, status:"", created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id:8, name:"Duc", phone:"6436", identification_card: "0799", birthday: new Date(), sex: true, province: "", district: "", commune: "", address: "", room:"", main_contact: true, status:"", created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id:9, name:"Kien", phone:"6775", identification_card: "0791", birthday: new Date(), sex: true, province: "", district: "", commune: "", address: "", room:"", main_contact: true, status:"", created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+{_id:10, name:"Huy", phone:"2342", identification_card: "0789", birthday: new Date(), sex: true, province: "", district: "", commune: "", address: "", room:"", main_contact: true, status:"", created_at: Timestamp(0,0), updated_at: Timestamp(0,0)},
+])
