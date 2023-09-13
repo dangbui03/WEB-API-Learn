@@ -1,0 +1,35 @@
+insert SQL
+
+insert table
+values {}
+
+tinh table
+
+lien ket logic
+cai đặt key
+
+sql hỗ trợ transaction -> nosql ko có
+
+transaction {
+    insert A -> bang tinh -> true
+    insert B -> bang huyen -> false
+}
+-> false het -> ko insert thang nao
+
+
+
+Mongo
+collection tinh -> chua tỉnh
+collection huyện -> chứa huyện
+
+{id 1
+    tỉnh: hà nội,
+    kiểu tỉnh: 1,
+    khu vực: miền bắc,
+    đặc biệt: thủ đô
+}
+{id 2
+    tỉnh: tphcm,
+    khu vực: miền nam,
+    đặc biệt:
+}
